@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+  <head>
+   <meta charset="UTF-8"/>
+	<title>"TIENDA EN LINEA DE CHOCOLATES"</title>
+	
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+  </head>
+
+  <body>
+  
+  
+      <div id="background">
+		<div id="page">
+            <div id="header">
+				<div id="navigation">
+					<ul>
+						<li>
+							<a th:href="@{/}">Inicio</a></li>
+						<li class="selected">
+							<a th:href="@{/agregar}">AGREGAR</a>
+						</li>
+						<li>
+							<a th:href="@{/acercaDe}">AcercaDe</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+      
+<style>
+table, th {
+    border: 2px solid white;
+}
+</style>
+
+ <a href="swagger-ui.html">Ver API</a>
+<section id="lista">
+      <H1>Lista de productos</H1>
+      <div class="table-responsive">
+      <table class="table">
+      <tr>
+        <th WIDTH="100" 
+	    HEIGHT="40">Id</th>
+        <th WIDTH="100" 
+	    HEIGHT="40" >Nombre</th>
+        <th WIDTH="100" 
+	    HEIGHT="40" >Descripción</th>
+        <th WIDTH="100" 
+	    HEIGHT="40">Cantidad</th>
+        <th WIDTH="100" 
+	    HEIGHT="40">Imagen</th>
+      </tr>
+       <tr>
+        <th WIDTH="100" 
+	    HEIGHT="40"></th>
+        <th WIDTH="100" 
+	    HEIGHT="40" ></th>
+        <th WIDTH="100" 
+	    HEIGHT="40" ></th>
+        <th WIDTH="100" 
+	    HEIGHT="40"></th>
+        <th WIDTH="100" 
+	    HEIGHT="40"></th>
+      </tr>
+     
+      </table>
+      </div>
+      </section>
+
+
+
+    
+</div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

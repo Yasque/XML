@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<meta charset="UTF-8"/>
+	<title>"TIENDA EN LINEA DE CHOCOLATES"</title>
+	
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css"/>
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="navigation">
+					<ul>
+						<li>
+							<a th:href="@{/}">Inicio</a></li>
+						<li class="selected">
+							<a th:href="@{/agregar}">AGREGAR</a>
+						</li>
+						<li>
+							<a th:href="@{/acercaDe}">AcercaDe</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="contact" class="body">
+							<h5>Registro de productos</h5>
+							
+							<br></br>
+							<form  th:action="@{/agrega}"  method="POST">
+								<table>
+									<tbody>
+										<tr>
+											<td>Descripcion del producto</td>
+											<td><input type="text" name="cantidad" placeholder="numero de piezas" class="txtfield"  /></td>
+										</tr> <tr>
+											<td>SELECCIONAR ARCHIVO</td>
+											<td><input type="file" name="file" /></td>
+										</tr> 
+										<tr>
+										
+											<td><input type="submit" value="Upload" /></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

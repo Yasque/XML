@@ -1,11 +1,11 @@
 /* Website template by freewebsitetemplates.com */
 body {
-	background: url(bg.jpg) repeat left bottom;
+	background: url(bg-body.jpg) repeat left bottom;
 	font-family: "Times New Roman", Times, serif;
 	margin: 0;
 }
 #background {
-	background: url(bg.jpg) repeat-x center top;
+	background: url(bg-pattern.jpg) repeat-x center top;
 	min-height: 1318px;
 }
 #page {
